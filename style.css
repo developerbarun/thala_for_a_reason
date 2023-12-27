@@ -1,0 +1,85 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 40px;
+    margin: 40px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .no {
+    filter: blur(1px);
+  }
+  
+  .thala {
+    position: relative;
+    bottom: 240px;
+  }
+
+  #audio{
+    margin-top: -100px;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .container {
+      padding: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    input {
+      width: calc(100% - 20px);
+    }
+  
+    .thala {
+      bottom: 100px;
+    }
+  
+    .nothala p {
+      margin: 20px;
+    }
+  
+    body {
+      overflow-x: hidden; 
+    }
+  }
+  
