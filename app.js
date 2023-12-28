@@ -17,19 +17,14 @@ const sumOfDigit = (num) => {
 } 
 
 const showThala = () => {
-    let textValue = text.value.replace(/\s+/g, "");
+    
+    // let textValue = text.value.replace(/\s+/g, "");
+    let textValue = text.value;
 
-    if(textValue === "7" || textValue.length === 7) {
+    if(textValue === "7" || textValue.length === 7 || sumOfDigit(textValue) === 7) {
         para.innerText = "THALA FOR A REASON"
         container.classList.add("no");
         thala.classList.remove("hide")
-        audio.play();
-
-    }else if(sumOfDigit(textValue) == 7){
-        // para.innerText = "NO THALA FOR YOU"
-        para.innerText = "THALA FOR A REASON"
-        container.classList.add("no");
-        result.classList.remove("hide")
         audio.play();
 
     }else if(textValue.length === 0){
