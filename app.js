@@ -18,10 +18,9 @@ const sumOfDigit = (num) => {
 
 const showThala = () => {
     
-    // let textValue = text.value.replace(/\s+/g, "");
-    let textValue = text.value;
+    let textValue = text.value.replace(/\s+/g, "");
 
-    if(textValue === "7" || textValue.length === 7 || sumOfDigit(textValue) === 7) {
+    if(textValue.length === 7 || sumOfDigit(textValue) === 7) {
         para.innerText = "THALA FOR A REASON"
         container.classList.add("no");
         thala.classList.remove("hide")
